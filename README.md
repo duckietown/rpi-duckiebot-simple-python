@@ -3,22 +3,25 @@
 As explained [in the guide](http://docs.duckietown.org/DT18/opmanual_duckiebot/out/docker_setup.html), 
 these commands need to be run from your laptop, but 
 things will happen on the robot.
-
-
-Set the environment variable to point to the Duckiebot:
-
-    $ export DOCKER_HOST=tcp://X.X.X.X:2375
     
 Run the following:
 
-    $ docker build -t my-simple-python-program .
+    $ docker -H <YOUR_DUCKIEBOT>.local  build -t my-simple-python-program .
     
 The docker daemon on the Duckiebot will build the container.
 
 Then run the following:
 
-    $ docker run -it --network=host my-simple-python-program
+    $ docker -H <YOUR_DUCKIEBOT>.local  run -it --network=host my-simple-python-program
 
 You should see this output:
 
     I am executing on the host <HOSTNAME>
+
+
+
+**Note**: If you set the variable `DOCKER_HOST` as:
+
+    export DOCKER_HOST=<YOUR_DUCKIEBOT>.local
+
+then you can avoid `-H <YOUR_DUCKIEBOT>.local`.
