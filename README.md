@@ -1,6 +1,7 @@
 # Simple program to run via Docker
 
-As explained in the guide, these commands need to be run from your laptop, but 
+As explained [in the guide](http://docs.duckietown.org/DT18/opmanual_duckiebot/out/docker_setup.html), 
+these commands need to be run from your laptop, but 
 things will happen on the robot.
 
 
