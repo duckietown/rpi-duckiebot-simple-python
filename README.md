@@ -18,3 +18,7 @@ The docker daemon on the Duckiebot will build the container.
 Then run the following:
 
     $ docker run -it --network=host my-simple-python-program
+
+You should see this output:
+
+    I am executing on the host <HOSTNAME>
