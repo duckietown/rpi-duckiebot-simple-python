@@ -6,7 +6,8 @@ things will happen on the robot.
     
 Run the following:
 
-    $ docker -H <YOUR_DUCKIEBOT>.local  build -t my-simple-python-program .
+    $ git clone https://github.com/duckietown/rpi-duckiebot-simple-python.git
+    $ docker -H <YOUR_DUCKIEBOT>.local  build -t my-simple-python-program rpi-duckiebot-simple-python
     
 The docker daemon on the Duckiebot will build the container.
 
