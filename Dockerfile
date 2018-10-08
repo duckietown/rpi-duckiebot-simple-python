@@ -13,3 +13,5 @@ RUN chmod +x /project/hello.py
 
 # Setting the program as the default
 CMD /usr/bin/python /project/hello.py
+
+
