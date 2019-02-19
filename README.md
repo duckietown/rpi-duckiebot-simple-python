@@ -10,7 +10,7 @@ First clone the repo:
 
 Run the following:
 
-    $ docker -H <YOUR_DUCKIEBOT>.local  build -t my-simple-python-program rpi-duckiebot-simple-python
+    $ docker -H <YOUR_DUCKIEBOT>.local  build -t my-simple-python-program .
     
 The docker daemon on the Duckiebot will build the container.
 
